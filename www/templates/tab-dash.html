@@ -1,0 +1,22 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <h2>Welcome to Ionic</h2>
+    <button class="button button-block button-positive" ng-click="takePhoto()">Take Selfie</button>
+
+    <img ng-src="{{image}}" alt="">
+
+    <!-- <div class="list" ng-show="newPhoto.image"> -->
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Title" ng-model="newPhoto.title">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Last Name">
+      </label>
+      <label class="item item-input">
+        <textarea placeholder="Description" ng-model='newPhoto.description'></textarea>
+      </label>
+      <button class="button button-block button-balanced" ng-click="savePhoto()">Save</button>
+    </div>
+  </ion-content>
+</ion-view>
